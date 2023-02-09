@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');//accessing mongoos package
-
-mongoose.connect('mongourl',
+const mongourl="mongodb+srv://user_bhagitha:Bhagitha9072@@mycluster.74kgk.azure.mongodb.net/LibraryDB?retryWrites=true&w=majority";
+mongoose.connect('mongodb+srv://user_bhagitha:Bhagitha9072@@mycluster.74kgk.azure.mongodb.net/LibraryDb?retryWrites=true&w=majority',
 {
     useNewUrlParser: true,
     useCreateIndex:true,

@@ -51,11 +51,12 @@
                         <span class="badge badge-secondary"><%=book.author%></span> 
                         <p class="t"><%=book.genre%></p>  
                     </div>
-                    <div>
+                    <div style="width:200px;display:flex; justify-content: space-between;">
                     <form action="/admin/edit/<%=book._id%>" method="get">
-                    <button class="btn btn-primary float-left" type="submit">
+                    <button class="btn btn-primary float-left w-100 h-100" type="submit">
                         EDIT <i class="fa fa-refresh" aria-hidden="true"></i> </button>
                     </form>
+                   
                     <form action="/admin/delete/<%= book._id %>" method="POST">
 
                         <button class="btn btn-danger float-right" type="submit">
